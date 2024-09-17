@@ -1,0 +1,92 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+import ArrowDownIcon from "../../public/Icons/ArrowDownIcon.astro";
+import ArrowUpIcon from "../../public/Icons/ArrowUpIcon.astro";
+---
+
+<section id="projects" class="flex md:ml-48 p-4 flex-col">
+  <h2>Projectes</h2>
+  <div>
+    <ProjectCard
+      href="https://diamond-prominence.vercel.app/"
+      imageSrc="/public/Diamondprominence.png"
+      title="Diamond Prominence"
+      description="Aquest projecte tracta la gestió de tornejos utilitzant Next.js i Prisma per a la implementació del backend, amb l'autenticació d'usuaris manejada per Next-Auth. La plataforma permet als usuaris crear tornejos públics o privats, unir-se a ells i visualitzar-los. El creador del torneig pot gestionar els partits, puntuar-los i avançar fases fins a arribar a la final."
+      githubLink="https://github.com/EudaX400/DiamondProminence"
+      status="En millora"
+    />
+    <ProjectCard
+      href="https://diamond-prominence.vercel.app/"
+      imageSrc="/public/LabWare.png"
+      title="LabWare"
+      description="Aquest projecte, realitzat per als alumnes i professorat del grau de Laboratori del Institut Castellet, gestiona l'inventari dels productes quimics que auqests tenen guardats en armaris. Utilitzant React, Laravel i una base de dates SQLite falicita l'organització i el control de tots els químics guardats tenint un registre, per al professor(usuari admin), dels productes extrets, la quantitat i l'usuari que ho ha fet."
+      githubLink="https://github.com/your-repo"
+      status="En millora"
+    />
+    <ProjectCard
+      href="https://diamond-prominence.vercel.app/"
+      imageSrc="/public/EchoEcho2.png"
+      title="EchoEcho"
+      description="Joc de móbil amb Android Studio, utilitzant Kotlin i Firebase. Consisteix en seguir el patró de moviments o so fins arribar el màxim de puntuació possible, si falles acaba la partida. Aquest consta de 3 nivells de dificultat, un perfil personalitzable incloent-hi imatges i una rànquing de puntuacions entre tots els jugadors."
+      githubLink="https://github.com/EudaX400/EchoEcho"
+      status="En millora"
+    />
+
+    <div id="more-projects" class="hidden">
+      <ProjectCard
+        href="https://diamond-prominence.vercel.app/"
+        imageSrc="/public/TuneAudit.png"
+        title="Tune Audit VR"
+        description=""
+        githubLink="https://github.com/EudaX400/EchoEcho"
+        status="Finalitzat"
+      />
+      <ProjectCard
+        href="https://diamond-prominence.vercel.app/"
+        imageSrc="/public/CodeHarbor.png"
+        title="Code Harbor"
+        description=""
+        githubLink="https://github.com/EudaX400/EchoEcho"
+        status="Finalitzat"
+      />
+    </div>
+    <div class="w-auto h-0.5 bg-green-700 mt-5"></div>
+    <div class="flex justify-center items-center">
+      <p
+        id="toggleButton"
+        class="text-green-700 cursor-pointer"
+        onclick="toggleProjects()"
+      >
+        Mostrar més
+      </p>
+      <div id="DownIcon" class="">
+        <ArrowDownIcon />
+      </div>
+      <div id="UpIcon" class="hidden">
+      <ArrowUpIcon />
+    </div>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  function toggleProjects() {
+    const moreProjects = document.getElementById("more-projects");
+    const toggleButton = document.getElementById("toggleButton");
+    const DownIcon = document.getElementById("DownIcon");
+    const UpIcon = document.getElementById("UpIcon");
+
+    if (moreProjects.classList.contains("hidden")) {
+      moreProjects.classList.remove("hidden"); 
+      toggleButton.textContent = "Mostrar menys"; 
+      DownIcon.classList.add("hidden");
+      UpIcon.classList.remove("hidden");
+      
+    } else {
+      moreProjects.classList.add("hidden"); 
+      toggleButton.textContent = "Mostrar més"; 
+      DownIcon.classList.remove("hidden");
+      UpIcon.classList.add("hidden");
+    }
+  }
+</script>

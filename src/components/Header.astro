@@ -1,0 +1,38 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+import HeaderMobile from "./HeaderMobile.astro"
+---
+
+<header
+  class="fixed top-0 z-10 w-full mx-auto mt-2"
+>
+  <div class="flex items-center justify-center">
+    <nav class="hidden sm:flex px-3 flex-row gap-x-10 rounded-xl m-4 w-auto">
+      <a href="/#experience">Experience</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#skills">Skills</a>
+      <a href="/about">About me</a>
+      <a href="/contact">Contact</a>
+      <ThemeToggle />
+      <a href="/">Lang</a>
+    </nav>
+  </div>
+
+  <div class="flex justify-end items-end p-4 sm:hidden">
+    <HeaderMobile />
+  </div>
+</header>
+
+<style>
+  nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur dark:bg-gray-800/90 bg-green-200/50 ring-white/10;
+    }
+  }
+</style>

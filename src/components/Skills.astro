@@ -1,0 +1,87 @@
+---
+const FrontImg = [
+  "JavaScript.png",
+  "Html.png",
+  "Css.png",
+  "Tailwind.png",
+  "Sass.png",
+  "Typescript.png",
+  "React.png",
+  "Next.png",
+  "expo.png",
+  "Astro.png",
+  "Cypress.png",
+  "JQuery.png",
+];
+
+const BackImg = [
+  "Python.png",
+  "Java.png",
+  "Kotlin.png",
+  "Node.png",
+  "Prisma.png",
+  "Laravel.png",
+  "Php.png",
+  "Mysql.png",
+  "PostgresSql.png",
+  "Mongodb.png",
+  "SQLite.png",
+  "Firebase.png",
+  "Odoo.png",
+  "Guillotina.png"
+];
+
+const OtherImg = ["AndroidStudio.png", "Unity.png", "Docker.png", "DaVinci.png"];
+---
+
+<section id=skills class="flex md:ml-48 p-4 flex-col">
+  <h2>Skills</h2>
+  <div class="grid grid-cols-1 mt-7">
+    <div>
+      <h3 class="text-center">Frontend</h3>
+      <div class="flex flex-wrap justify-center gap-4 my-8">
+        {
+          FrontImg.map((img) => (
+            <div
+              id={img}
+              class="flex justify-center items-center dark:bg-black border border-green-600 dark:border-gray-700 p-4"
+            >
+              <img src={"/public/" + img} alt={img} class="max-w-28 h-auto" />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-center">Backend</h3>
+      <div class="flex flex-wrap justify-center gap-4 my-8">
+        {
+          BackImg.map((img) => (
+            <div
+              id={img}
+              class="flex justify-center items-center dark:bg-black border border-green-600 dark:border-gray-700 p-4"
+            >
+              <img src={"/public/" + img} alt={img} class="max-w-28 h-auto" />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div>
+      <h3 class="text-center">Eines i Tecnologies Addicionals</h3>
+      <div class="flex flex-wrap justify-center gap-4 my-8">
+        {
+          OtherImg.map((img) => (
+            <div
+              id={img}
+              class="flex justify-center items-center dark:bg-black border border-green-600 dark:border-gray-700 p-4"
+            >
+              <img src={"/public/" + img} alt={img} class="max-w-28 h-auto" />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
