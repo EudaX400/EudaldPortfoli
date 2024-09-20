@@ -1,8 +1,11 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer class="flex justify-center py-4">
-    <p>Quasi tots els drets reservats © 2024 | Eudald Daví Solà</p>
+    <p>{t('footer')}</p>
 
 </footer>

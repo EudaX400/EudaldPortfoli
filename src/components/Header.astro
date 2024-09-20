@@ -7,6 +7,10 @@ import LangPicker from "./LangPicker.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+function getLocalizedAnchorUrl(anchor) {
+  return `${getRelativeLocaleUrl(lang, '')}${anchor}`;
+}
 ---
 
 <header
@@ -14,11 +18,11 @@ const t = useTranslations(lang);
 >
   <div class="flex items-center justify-center">
     <nav class="hidden sm:flex px-3 flex-row gap-x-10 rounded-xl m-4 w-auto">
-      <a href="/#experience">{t('nav.experience')}</a>
-      <a href="/#projects">{t('nav.projects')}</a>
-      <a href="/#skills">{t('nav.skills')}</a>
-      <a href={getRelativeLocaleUrl(lang,'about')}>{t('nav.about')}</a>
-      <a href={getRelativeLocaleUrl(lang,'contact')}>{t('nav.contact')}</a>
+      <a href={getLocalizedAnchorUrl('#experience')}>{t('header.experience')}</a> 
+      <a href={getLocalizedAnchorUrl('#projects')}>{t('header.projects')}</a>
+      <a href={getLocalizedAnchorUrl('#skills')}>{t('header.skills')}</a>
+      <a href={getRelativeLocaleUrl(lang,'about')}>{t('header.about')}</a>
+      <a href={getRelativeLocaleUrl(lang,'contact')}>{t('header.contact')}</a>
       <ThemeToggle />
       <LangPicker/>
     </nav>

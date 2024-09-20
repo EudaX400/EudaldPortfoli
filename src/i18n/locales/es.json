@@ -1,0 +1,41 @@
+{
+  "header": {
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "intro": {
+    "name": "Que tal, soy Eudald",
+    "Dam": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+    "info": "de Barcelona, España. Formato en tecnologías tanto de frontend como de backend, con una especialización en el desarrollo de páginas web y aplicaciones."
+  },
+  "download-cv": "Descargar currículum",
+
+  "experience": {
+    "title": "Experiencia Laboral",
+    "practices": "Prácticas 383h",
+    "date": "Diciembre 2023 - Mayo 2024",
+    "description": "Maquetación de una página web responsive utilizando Next.js y Sass. Uso de rutas para conectar la aplicación a la API del framework Guillotina, que gestionaba la base de datos. Además, creación de componentes como formularios y tablas con Python para interactuar con esa base de datos. Finalmente, prueba del backend con Python y del frontend utilizando Cypress.",
+    "web-page": "Página Deltebre Dansa"
+  },
+  "projects": {
+    "description1": "Este proyecto trata sobre la gestión de torneos utilizando Next.js y Prisma para la implementación del backend, con la autenticación de usuarios manejada por Next-Auth. La plataforma permite a los usuarios crear torneos públicos o privados, unirse a ellos y visualizarlos. El creador del torneo puede gestionar los partidos, puntuarles y avanzar fases hasta llegar a la final.",
+    "description2": "Este proyecto, realizado para los alumnos y profesorado del grado de Laboratorio del Instituto Castellet, gestiona el inventario de los productos químicos que estos tienen guardados en armarios. Utilizando React, Laravel y una base de datos SQLite, facilita la organización y el control de todos los químicos almacenados, teniendo un registro para el profesor (usuario admin) de los productos extraídos, la cantidad y el usuario que lo ha hecho.",
+    "description3": "Juego móvil con Android Studio, utilizando Kotlin y Firebase. Consiste en seguir el patrón de movimientos o sonidos hasta alcanzar la máxima puntuación posible; si fallas, la partida termina. Este juego consta de 3 niveles de dificultad, un perfil personalizable que incluye imágenes y un ranking de puntuaciones entre todos los jugadores.",
+    "description4": "Aplicación de realidad virtual, hecha con Unity, que permite evaluar la pérdida de audición en jóvenes, mostrando a través de diversos sonidos cómo su capacidad auditiva se deteriorará con el tiempo. Para implementarlo, inicialmente se realizaría un cálculo para determinar su capacidad auditiva actual. El usuario sería guiado a través de un menú donde se le pediría ajustar, con sus propias manos, diversos parámetros como la edad, el volumen al que suele escuchar música y las horas diarias dedicadas a esta actividad.",
+    "description5": "Este proyecto, realizado mayoritariamente con PHP, permite guardar código en la nube. Consta de un registro para aquellos que no tienen una cuenta y un inicio de sesión; una vez iniciada la sesión, se podrá editar y crear los archivos deseados. También se podrá seleccionar el archivo o copiar y pegar el código en la aplicación. (Este proyecto no está terminado debido al tiempo requerido).",
+    "description6": "Proyecto, realizado con Java, que simula un banco donde se podrá ingresar y retirar dinero de la cuenta bancaria del usuario. El usuario deberá introducir el ID de la cuenta y la contraseña para acceder. Una vez iniciada la sesión, el usuario podrá decidir si retirar o ingresar dinero. Para ello, deberá seleccionar una de las dos opciones."
+  },
+  "improvement": "En mejora",
+  "finished": "Finalizado",
+  "show-more": "Mostrar mas",
+  "tools": "Herramientas y Tecnologías Adicionales",
+  "about": {
+    "paragraph1": "Me llamo Eudald Daví Solà, más conocido como Eudi o Euda. Soy un joven programador de veinte años con una pasión incesante por el aprendizaje y un fuerte compromiso con el crecimiento personal y profesional. Mi curiosidad innata me impulsa a buscar nuevas oportunidades para evolucionar en el ámbito laboral, así como a contribuir con mis habilidades y conocimientos en todo lo que pueda ayudar.",
+    "paragraph2": "Aunque hace pocos años que estoy en el mundo de la programación, he adquirido una base sólida y una gran pasión por continuar creciendo en este campo. Me motiva la capacidad de la tecnología para transformar y mejorar nuestra vida diaria, y aspiro a contribuir activamente a estos avances. Estoy comprometido con el aprendizaje constante y dispuesto a enfrentar nuevos retos para seguir simplificando y haciendo más gratificante la vida cotidiana a través de la informática.",
+    "paragraph3": "Considero que el bienestar físico y mental es esencial, y el deporte es una vía efectiva para conseguir estos objetivos. No solo promueve la salud física, sino que también contribuye al bienestar mental. Personalmente, encuentro placer al practicar cualquier deporte y disfrutar de la natura, como por ejemplo andar por la montaña, puesto que creo que refuerza tanto la mente como el cuerpo."
+  },
+  "footer" : "Casi todos los derechos reservados © 2024 | Eudald Daví Solà"
+}

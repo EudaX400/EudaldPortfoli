@@ -1,10 +1,17 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <main class="flex justify-between my-10 mt-28 bg-eudald-intro bg-cover bg-center sm:bg-none">
   <div class="sm:bg-transparent bg-green-950 bg-opacity-50">
-    <h1 class="text-center bg-contain mt-4">Que tal, sóc l'Eudald</h1>
+    <h1 class="text-center bg-contain mt-4">{t('intro.name')}</h1>
     <div class="flex flex-col items-center">
-      <p class="m-4 w-6/12 text-lg">
-        <span class="text-green-600 font-bold">Técnic Superior en Desenvolupament d'Aplicacions Multiplataforma</span> de
-        Barcelona, Espanya. Format en tecnologies tant de frontend com de backend, amb una especialització en el desenvolupament de pàgines web i aplicacions.
+      <p class="m-4 w-6/12 text-lg text-white">
+        <span class="text-green-600 font-bold">{t('intro.Dam')}</span>
+        {t('intro.info')}
       </p>
       <div class="flex justify-between px-4 mb-4">
         <div class="group relative block">
@@ -22,7 +29,7 @@
                 download="CurriculumEudald_Cat.pdf"
                 class="relative inline-flex items-center justify-center w-full px-3 py-1 text-sm bg-gray-900 border-gray-800 rounded-full cursor-pointer whitespace-nowrap text-white"
               >
-                Descarregar currículum
+                {t('download-cv')}
               </a>
             </span>
           </div>

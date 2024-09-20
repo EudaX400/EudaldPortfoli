@@ -1,4 +1,9 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const FrontImg = [
   "JavaScript.png",
   "Html.png",
@@ -35,7 +40,7 @@ const OtherImg = ["AndroidStudio.png", "Unity.png", "Docker.png", "DaVinci.png"]
 ---
 
 <section id=skills class="flex md:ml-48 p-4 flex-col">
-  <h2>Skills</h2>
+  <h2>{t('header.skills')}</h2>
   <div class="grid grid-cols-1 mt-7">
     <div>
       <h3 class="text-center">Frontend</h3>
@@ -69,7 +74,7 @@ const OtherImg = ["AndroidStudio.png", "Unity.png", "Docker.png", "DaVinci.png"]
       </div>
     </div>
     <div>
-      <h3 class="text-center">Eines i Tecnologies Addicionals</h3>
+      <h3 class="text-center">{t('tools')}</h3>
       <div class="flex flex-wrap justify-center gap-4 my-8">
         {
           OtherImg.map((img) => (

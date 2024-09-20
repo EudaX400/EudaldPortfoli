@@ -1,0 +1,43 @@
+{
+  "header": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About me",
+    "contact": "Contact"
+  },
+  "intro": {
+    "name": "How about, it's Eudald",
+    "Dam": "Advanced Technician in Multiplatform Application Development",
+    "info": "of Barcelona, Spain. Trained in both frontend and backend technologies, with a specialization in the development of web pages and applications."
+  },
+
+  "download-cv": "Download CV",
+
+  "experience": {
+    "title": "Experience",
+    "practices": "Practices 383h",
+    "date": "December 2023 - May 2024",
+    "description": "A responsive web page layout using Next.js and Sass. Use of routes to connect the application to the Guillotina framework API, which managed the database. In addition, creating components such as forms and tables with Python to interact with this database. Finally, backend testing with Python and frontend using Cypress.",
+    "web-page": "Deltebre Dansa page"
+  },
+  "projects": {
+    "description1": "This project involves tournament management using Next.js and Prisma for the backend implementation, with user authentication handled by Next-Auth. The platform allows users to create public or private tournaments, join them, and view them. The tournament creator can manage the matches, score them, and advance phases until reaching the final.",
+    "description2": "This project, carried out for the students and faculty of the Laboratory degree at the Castellet Institute, manages the inventory of chemical products stored in cabinets. Using React, Laravel, and an SQLite database, it facilitates the organization and control of all stored chemicals, maintaining a record for the teacher (admin user) of the extracted products, the quantity, and the user who performed the action.",
+    "description3": "Mobile game developed with Android Studio, using Kotlin and Firebase. The objective is to follow the pattern of movements or sounds to achieve the highest possible score; if you fail, the game ends. It includes 3 difficulty levels, a customizable profile with images, and a score ranking among all players.",
+    "description4": "Virtual reality application, developed with Unity, that allows assessing hearing loss in young people by demonstrating through various sounds how their hearing ability will deteriorate over time. To implement this, an initial calculation would be made to determine their current hearing capacity. The user would be guided through a menu where they would be asked to adjust, with their own hands, various parameters such as age, the volume at which they usually listen to music, and the daily hours dedicated to this activity.",
+    "description5": "This project, primarily developed with PHP, allows users to save code in the cloud. It features a registration process for those without an account and a login; once logged in, users can edit and create the desired files. They can also select a file or copy and paste code into the application. (This project is unfinished due to the time constraints).",
+    "description6": "Project developed with Java that simulates a bank where users can deposit and withdraw money from their bank account. The user will need to enter the account ID and password to log in. Once logged in, the user can decide whether to withdraw or deposit money. To do this, they will need to select one of the two options."
+  },
+  "improvement": "In improvement",
+  "finished": "Finished",
+  "show-more": "Show more",
+  "tools": "Additional Tools and Technologies",
+
+  "about": {
+    "paragraph1": "My name is Eudald Daví Solà, more commonly known as Eudi or Euda. I am a twenty-year-old programmer with an incessant passion for learning and a strong commitment to personal and professional growth. My innate curiosity drives me to seek new opportunities to evolve in the workplace, as well as to contribute my skills and knowledge in any way I can help.",
+    "paragraph2": "Although I have only been in the world of programming for a few years, I have built a solid foundation and a great passion for continuing to grow in this field. I am motivated by technology's ability to transform and enhance our daily lives, and I aspire to actively contribute to these advancements. I am committed to constant learning and ready to take on new challenges to continue simplifying and making everyday life more rewarding through computing.",
+    "paragraph3": "I believe that physical and mental well-being is essential, and sports are an effective way to achieve these goals. It not only promotes physical health but also contributes to mental well-being. Personally, I find pleasure in practicing any sport and enjoying nature, such as hiking in the mountains, as I believe it strengthens both the mind and the body."
+  },
+  "footer" : "Almost all rights reserved © 2024 | Eudald Daví Solà"
+}

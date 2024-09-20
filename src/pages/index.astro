@@ -1,24 +1,8 @@
 ---
 import Layout from "../Layouts/layout.astro";
-import Intro from "../components/Intro.astro";
-import Experience from "../components/Experience.astro";
-import Projects from "../components/Projects.astro";
-import Skills from "../components/Skills.astro";
+import App from "../components/pages/index.astro"
 ---
 
 <Layout title="Porfolio de Eudald" description="">
-  <main class="flex flex-col min-h-screen">
-    <div class="container col-xxl-8 px-4 py-5">
-      <Intro />
-    </div>
-    <div class="">
-      <Experience />
-    </div>
-    <div class="container col-xxl-8 px-4 py-5">
-      <Projects />
-    </div>
-    <div class="container col-xxl-8 px-4 py-5">
-      <Skills/>
-    </div>
-  </main>
+    <App/>
 </Layout>
