@@ -3,6 +3,14 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+let cvPath = 'CV-Eudald-Davi_CA.pdf'; 
+
+if (lang === 'es') {
+  cvPath = 'CV-Eudald-Davi_ES.pdf';
+} else if (lang === 'en') {
+  cvPath = 'CV-Eudald-Davi_EN.pdf';
+}
 ---
 
 <main class="flex justify-between my-10 mt-28 bg-eudald-intro bg-cover bg-center sm:bg-none">
@@ -25,8 +33,8 @@ const t = useTranslations(lang);
                 class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
               ></span>
               <a
-                href="/path/to/your-cv.pdf"
-                download="CurriculumEudald_Cat.pdf"
+              href="../../public/"
+                download={cvPath}
                 class="relative inline-flex items-center justify-center w-full px-3 py-1 text-sm bg-gray-900 border-gray-800 rounded-full cursor-pointer whitespace-nowrap text-white"
               >
                 {t('download-cv')}

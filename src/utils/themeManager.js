@@ -1,5 +1,3 @@
-// src/utils/themeManager.js
-
 // Función para obtener la preferencia de tema
 export const getThemePreference = () => {
   if (typeof localStorage !== "undefined") {

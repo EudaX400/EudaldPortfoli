@@ -5,7 +5,7 @@ import Sun from "../../public/Icons/Sun.astro";
 import Moon from "../../public/Icons/Moon.astro";
 import System from "../../public/Icons/System.astro";
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import LangPicker from "./LangPicker.astro";
 
@@ -15,6 +15,10 @@ const t = useTranslations(lang);
 function getLocalizedAnchorUrl(anchor) {
   return `${getRelativeLocaleUrl(lang, '')}${anchor}`;
 }
+
+import { languages } from "../i18n/ui";
+
+const translatePath = useTranslatedPath(lang);
 ---
 
 <div class="relative">
@@ -45,13 +49,24 @@ function getLocalizedAnchorUrl(anchor) {
     </div>
 
 
-    <div class="flex flex-row justify-between items-center p-4 bg-green-700">
-      <button id="language-ca" class="">Ca</button>
-      <div class="w-0.5 h-4 mx-4 bg-white"></div>
-      <button id="language-es" class="">Es</button>
-      <div class="w-0.5 h-4 mx-4 bg-white"></div>
-      <button id="language-en" class="">En</button>
+    <div class="flex items-center p-4 bg-green-700">
+      <ul class="flex flex-row justify-between items-center">
+        {
+          Object.entries(languages).map(([languageCode]) => (
+            <li class="lang-menu-option">
+              <a
+                href={translatePath("/", languageCode)}
+                class={`language-link ${languageCode === lang ? 'font-bold' : ''}`}
+              >
+                {languageCode}
+              </a>
+            </li>
+            <div class={`w-0.5 h-4 mx-4 bg-white ${languageCode === 'en' ? 'hidden' : ''}`}></div>
+          ))
+        }
+      </ul>
     </div>
+    
   </section>
 </div>
 
