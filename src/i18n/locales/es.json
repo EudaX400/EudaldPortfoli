@@ -37,5 +37,13 @@
     "paragraph2": "Aunque hace pocos años que estoy en el mundo de la programación, he adquirido una base sólida y una gran pasión por continuar creciendo en este campo. Me motiva la capacidad de la tecnología para transformar y mejorar nuestra vida diaria, y aspiro a contribuir activamente a estos avances. Estoy comprometido con el aprendizaje constante y dispuesto a enfrentar nuevos retos para seguir simplificando y haciendo más gratificante la vida cotidiana a través de la informática.",
     "paragraph3": "Considero que el bienestar físico y mental es esencial, y el deporte es una vía efectiva para conseguir estos objetivos. No solo promueve la salud física, sino que también contribuye al bienestar mental. Personalmente, encuentro placer al practicar cualquier deporte y disfrutar de la natura, como por ejemplo andar por la montaña, puesto que creo que refuerza tanto la mente como el cuerpo."
   },
-  "footer" : "Casi todos los derechos reservados © 2024 | Eudald Daví Solà"
+  "footer" : "Casi todos los derechos reservados © 2024 | Eudald Daví Solà",
+  "contact-me" : "Contactame",
+  "your-name" : "Tu nombre",
+  "enter-name" : "Introduce tu nombre",
+  "your-email" : "Tu Email",
+  "enter-email" :"Introduce tu Email",
+  "message" : "Mensaje",
+  "your-message" : "Tu mensaje",
+  "send-message" : "Enviar Mensaje"
 }

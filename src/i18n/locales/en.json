@@ -39,5 +39,13 @@
     "paragraph2": "Although I have only been in the world of programming for a few years, I have built a solid foundation and a great passion for continuing to grow in this field. I am motivated by technology's ability to transform and enhance our daily lives, and I aspire to actively contribute to these advancements. I am committed to constant learning and ready to take on new challenges to continue simplifying and making everyday life more rewarding through computing.",
     "paragraph3": "I believe that physical and mental well-being is essential, and sports are an effective way to achieve these goals. It not only promotes physical health but also contributes to mental well-being. Personally, I find pleasure in practicing any sport and enjoying nature, such as hiking in the mountains, as I believe it strengthens both the mind and the body."
   },
-  "footer" : "Almost all rights reserved © 2024 | Eudald Daví Solà"
+  "footer" : "Almost all rights reserved © 2024 | Eudald Daví Solà",
+  "contact-me" : "Contact me",
+  "your-name" : "Your Name",
+  "enter-name" : "Enter your Name",
+  "your-email" : "Your Email",
+  "enter-email" :"Enter your Email",
+  "message" : "Message",
+  "your-message" : "Your Message",
+  "send-message" : "Send Message"
 }

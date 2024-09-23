@@ -38,5 +38,13 @@
     "paragraph2": "Tot i que fa pocs anys que estic en el món de la programació, he adquirit una base sòlida i una gran passió per continuar creixent en aquest camp. Em motiva la capacitat de la tecnologia per transformar i millorar la nostra vida diària, i aspiro a contribuir activament a aquests avenços. Estic compromès amb l'aprenentatge constant i disposat a afrontar nous reptes per continuar simplificant i fent més gratificant la vida quotidiana a través de la informàtica.",
     "paragraph3": "Considero que el benestar físic i mental és essencial, i l'esport és una via efectiva per aconseguir aquests objectius. No només promou la salut física, sinó que també contribueix al benestar mental. Personalment, trobo plaer en practicar qualsevol esport i gaudir de la natura, com ara caminar per la muntanya, ja que crec que reforça tant la ment com el cos."
   },
-  "footer" : "Quasi tots els drets reservats © 2024 | Eudald Daví Solà"
+  "footer" : "Quasi tots els drets reservats © 2024 | Eudald Daví Solà",
+  "contact-me" : "Contacta'm",
+  "your-name" : "El teu Nom",
+  "enter-name" : "Introdueix el teu nom",
+  "your-email" : "El teu Email",
+  "enter-email" :"Introdueix el teu email",
+  "message" : "Missatge",
+  "your-message" : "El teu missatge",
+  "send-message" : "Envia el Missatge"
 }

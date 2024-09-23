@@ -16,8 +16,8 @@ if (lang === 'es') {
 <main class="flex justify-between my-10 mt-28 bg-eudald-intro bg-cover bg-center sm:bg-none">
   <div class="sm:bg-transparent bg-green-950 bg-opacity-50">
     <h1 class="text-center bg-contain mt-4">{t('intro.name')}</h1>
-    <div class="flex flex-col items-center">
-      <p class="m-4 w-6/12 text-lg text-white">
+    <div class="flex flex-col items-center text-white sm:text-black dark:text-white">
+      <p class="m-4 w-6/12 text-lg">
         <span class="text-green-600 font-bold">{t('intro.Dam')}</span>
         {t('intro.info')}
       </p>
@@ -33,7 +33,7 @@ if (lang === 'es') {
                 class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
               ></span>
               <a
-              href="../../public/"
+              href="/"
                 download={cvPath}
                 class="relative inline-flex items-center justify-center w-full px-3 py-1 text-sm bg-gray-900 border-gray-800 rounded-full cursor-pointer whitespace-nowrap text-white"
               >
