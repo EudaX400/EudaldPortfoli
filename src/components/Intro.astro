@@ -33,8 +33,8 @@ if (lang === 'es') {
                 class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
               ></span>
               <a
-              href="/"
-                download={cvPath}
+              href={`/${cvPath}`}
+                download
                 class="relative inline-flex items-center justify-center w-full px-3 py-1 text-sm bg-gray-900 border-gray-800 rounded-full cursor-pointer whitespace-nowrap text-white"
               >
                 {t('download-cv')}
